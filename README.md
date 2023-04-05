@@ -30,10 +30,11 @@ mkdir ${HOME}/stablediff_model
 mkdir ${HOME}/tags
 ```
 Untar and setup the container - this will run the stable diffusion once in order to download the necessary internal models:
+(Note: This may throw an error when running the stable diffusion about CUDA not working - this is fine, we just need the model to download)
 ```
 bash setup_stablediff.sh
 ```
 Run stable diffusion on the supercomputer compute node:
 ```
-sbatch --output ./output_results.txt --mail-user YOUR_EMAIL_HERE --job-name "stablediff" run_mytag.sh
+sbatch --output ./output_results.txt --mail-user YOUR_EMAIL_HERE --job-name "stablediff" run_tag.sh
 ```
