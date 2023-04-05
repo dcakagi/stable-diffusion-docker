@@ -11,6 +11,9 @@ ch-tar2dir ${HOME}/stablediff.tar.gz ${HOME}/tags
 # need to mount container in order to download/run initial stable diffusion
 ch-fromhost --nvidia ~/tags/stablediff/
 
+chmod a+rwx ~/tags/stablediff/app/download_models.sh
+chmod a+rwx ~/tags/stablediff/app/run_stablediff.sh
+
 ch-run \
 -w \
 --no-home \
