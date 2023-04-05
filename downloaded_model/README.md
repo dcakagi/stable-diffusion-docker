@@ -1,0 +1,1 @@
+Directory where downloaded models will go - should include "feature-extractor" and "checker"
