@@ -21,7 +21,7 @@ ch-image build --force -t stablediff .
 ```
 Build the Docker image to a tar file:
 ```
-ch-builder2tar mytag ${HOME}
+ch-builder2tar stablediff ${HOME}
 ```
 Make the required directories for saving models for offline use (supercomputer runs disconnected from internet):
 ```
